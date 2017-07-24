@@ -1,0 +1,54 @@
+Started by user admin
+Building in workspace C:\Users\Анастасия\.jenkins\workspace\Run HTML Tests
+[Run HTML Tests] $ cmd /c call C:\Users\08DE~1\AppData\Local\Temp\jenkins3390851836584631.bat
+
+C:\Users\Ђ­ бв бЁп\.jenkins\workspace\Run HTML Tests>java -jar C:\Games\selenium\selenium-server-standalone-2.53.1.jar -htmlSuite *firefox http://open-eshop.stqa.ru/ C:\Games\selenium\homework\eshop.html C:\Games\selenium\homework\ report.html 
+22:58:28.120 INFO - Launching a standalone Selenium Server
+22:58:28.688 INFO - Java: Oracle Corporation 25.141-b15
+22:58:28.688 INFO - OS: Windows 7 6.1 amd64
+22:58:28.786 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+22:58:29.374 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+22:58:29.375 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+22:58:29.463 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform VISTA
+22:58:29.502 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+22:58:29.502 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+jar:file:/C:/Games/selenium/selenium-server-standalone-2.53.1.jar!/customProfileDirCUSTFFCHROME
+22:58:30.644 INFO - Launching Firefox...
+22:58:59.598 INFO - Received posted results
+logout.html
+<a href="logout.html">logout</a></td></tr>
+</tbody></table>
+
+
+
+deletcoupon.html
+<a href="deletcoupon.html">deletcoupon</a></td></tr>
+<tr class="  status_passed"><td>
+creatcoupon.html
+<a href="creatcoupon.html">creatcoupon</a></td></tr>
+<tr class="  status_passed"><td>
+login.html
+<a href="login.html">login</a></td></tr>
+<tr class="  status_passed"><td>
+22:59:01.240 INFO - Killing Firefox...
+HTML suite exception seen:
+java.io.FileNotFoundException: C:\Games\selenium\homework (Отказано в доступе)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileWriter.<init>(Unknown Source)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.getFileWriter(HTMLLauncher.java:91)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.writeResults(HTMLLauncher.java:96)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:158)
+	at org.openqa.selenium.server.htmlrunner.HTMLLauncher.runHTMLSuite(HTMLLauncher.java:198)
+	at org.openqa.selenium.server.SeleniumServer.runHtmlSuite(SeleniumServer.java:705)
+	at org.openqa.selenium.server.SeleniumServer.boot(SeleniumServer.java:326)
+	at org.openqa.selenium.server.SeleniumServer.main(SeleniumServer.java:240)
+	at org.openqa.grid.selenium.GridLauncher$1.launch(GridLauncher.java:58)
+	at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:127)
+
+C:\Users\Ђ­ бв бЁп\.jenkins\workspace\Run HTML Tests>exit 1 
+Build step 'Выполнить команду Windows' marked build as failure
+Finished: FAILURE
